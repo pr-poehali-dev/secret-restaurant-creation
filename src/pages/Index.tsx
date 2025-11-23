@@ -76,7 +76,10 @@ const Index = () => {
     <div className="min-h-screen bg-background text-foreground">
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-primary/20">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <h1 className="text-2xl font-bold glow-text">ЭКСТАЗ</h1>
+          <div className="flex items-center gap-3">
+            <img src="https://cdn.poehali.dev/projects/d6a9f8ab-2a91-4353-b7b9-70c93bca06b5/files/bafa150f-fedc-430f-bc1b-6ced3cccbf90.jpg" alt="Логотип ЭКСТАЗ" className="h-10 w-10 rounded-lg object-cover glow-box" />
+            <h1 className="text-2xl font-bold glow-text">ЭКСТАЗ</h1>
+          </div>
           <div className="flex gap-6">
             {[
               { id: 'home', label: 'Главная' },
@@ -245,8 +248,10 @@ const Index = () => {
                   <Icon name="Phone" className="text-primary" size={20} />
                 </div>
                 <div>
-                  <h3 className="font-semibold mb-1">Телефон</h3>
-                  <p className="text-muted-foreground">+7 (___) ___-__-__</p>
+                  <h3 className="font-semibold mb-1">Телефоны директоров</h3>
+                  <p className="text-muted-foreground text-sm">Анастасия Павловна: +7 (953) 812-16-16</p>
+                  <p className="text-muted-foreground text-sm">Анна Дмитриевна: +7 (930) 778-46-77</p>
+                  <p className="text-muted-foreground text-sm">Диана Сергеевна: +7 (961) 620-19-90</p>
                 </div>
               </div>
 
@@ -256,7 +261,7 @@ const Index = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold mb-1">Email</h3>
-                  <p className="text-muted-foreground">reservations@enigma-secret.com</p>
+                  <p className="text-muted-foreground">diana11pese@gmail.com</p>
                 </div>
               </div>
 
