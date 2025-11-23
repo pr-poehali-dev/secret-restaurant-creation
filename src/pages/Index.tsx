@@ -76,7 +76,7 @@ const Index = () => {
     <div className="min-h-screen bg-background text-foreground">
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-primary/20">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <h1 className="text-2xl font-bold glow-text">ENIGMA</h1>
+          <h1 className="text-2xl font-bold glow-text">ЭКСТАЗ</h1>
           <div className="flex gap-6">
             {[
               { id: 'home', label: 'Главная' },
@@ -121,7 +121,7 @@ const Index = () => {
         </div>
 
         <div className="relative z-10 text-center px-4 animate-fade-in">
-          <h2 className="text-7xl font-black mb-6 glow-text">ENIGMA</h2>
+          <h2 className="text-7xl font-black mb-6 glow-text">ЭКСТАЗ</h2>
           <p className="text-2xl mb-4 text-primary">Секретный ресторан с изумительной кухней</p>
           <p className="text-lg mb-8 text-muted-foreground max-w-2xl mx-auto">
             Добро пожаловать в мир, где каждое блюдо создаёт уникальную атмосферу. 
@@ -213,7 +213,7 @@ const Index = () => {
 
           <Card className="p-8 bg-gradient-to-br from-card/50 to-purple-950/20 border-primary/30">
             <p className="text-lg leading-relaxed text-center">
-              <span className="text-primary font-semibold">ENIGMA</span> — это не просто ресторан. 
+              <span className="text-primary font-semibold">ЭКСТАЗ</span> — это не просто ресторан. 
               Это секретное пространство, где технологии встречаются с искусством кулинарии. 
               Наши стены-экраны создают уникальную атмосферу для каждого блюда: 
               от подводных глубин с медузами до космических пейзажей. 
@@ -282,7 +282,7 @@ const Index = () => {
       </section>
 
       <footer className="py-8 border-t border-primary/20 text-center text-muted-foreground">
-        <p>© 2024 ENIGMA. Все права защищены. Конфиденциальность гарантирована.</p>
+        <p>© 2024 ЭКСТАЗ. Все права защищены. Конфиденциальность гарантирована.</p>
       </footer>
     </div>
   );
