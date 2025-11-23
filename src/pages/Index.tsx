@@ -8,33 +8,55 @@ const menuItems = [
     id: 1,
     name: 'Подводный сад',
     description: 'Нежный тартар из лосося с икрой и микрозеленью на ледяной подушке',
-    price: '2 890 ₽',
+    price: '1 990 ₽',
     background: 'from-blue-900/40 to-cyan-900/40',
-    category: 'Холодные закуски'
+    category: 'Холодные закуски',
+    image: 'https://cdn.poehali.dev/projects/d6a9f8ab-2a91-4353-b7b9-70c93bca06b5/files/ae1e7e24-8c27-4193-bdb4-7403902a4ed6.jpg'
   },
   {
     id: 2,
-    name: 'Космическая трюфель',
-    description: 'Чёрный трюфель с золотой пылью, томленый в сливочном соусе',
-    price: '4 590 ₽',
-    background: 'from-purple-900/40 to-pink-900/40',
-    category: 'Основные блюда'
+    name: 'Гребешки с шафраном',
+    description: 'Обжаренные гребешки с шафрановой пеной и цветочным маслом',
+    price: '2 490 ₽',
+    background: 'from-amber-900/40 to-yellow-900/40',
+    category: 'Холодные закуски',
+    image: 'https://cdn.poehali.dev/projects/d6a9f8ab-2a91-4353-b7b9-70c93bca06b5/files/b71ca4f5-e68a-4f7d-8ae6-039d063ddd91.jpg'
   },
   {
     id: 3,
-    name: 'Огненный дракон',
-    description: 'Говядина вагю с перечным соусом и карамелизированными овощами',
-    price: '6 290 ₽',
-    background: 'from-orange-900/40 to-red-900/40',
-    category: 'Основные блюда'
+    name: 'Космическая трюфель',
+    description: 'Чёрный трюфель с золотой пылью, томленый в сливочном соусе',
+    price: '3 590 ₽',
+    background: 'from-purple-900/40 to-pink-900/40',
+    category: 'Основные блюда',
+    image: 'https://cdn.poehali.dev/projects/d6a9f8ab-2a91-4353-b7b9-70c93bca06b5/files/c273eab0-1682-4ced-9c41-668588031cdc.jpg'
   },
   {
     id: 4,
+    name: 'Огненный дракон',
+    description: 'Говядина вагю с перечным соусом и карамелизированными овощами',
+    price: '4 890 ₽',
+    background: 'from-orange-900/40 to-red-900/40',
+    category: 'Основные блюда',
+    image: 'https://cdn.poehali.dev/projects/d6a9f8ab-2a91-4353-b7b9-70c93bca06b5/files/1fe10d02-4de4-4e93-84e3-2e8a0e90b146.jpg'
+  },
+  {
+    id: 5,
+    name: 'Утиная грудка с ягодами',
+    description: 'Филе утки с ягодным соусом и сезонными овощами',
+    price: '3 290 ₽',
+    background: 'from-rose-900/40 to-red-900/40',
+    category: 'Основные блюда',
+    image: 'https://cdn.poehali.dev/projects/d6a9f8ab-2a91-4353-b7b9-70c93bca06b5/files/28771bda-bbe8-4689-9d89-7dcc27f09405.jpg'
+  },
+  {
+    id: 6,
     name: 'Лунный десерт',
     description: 'Молекулярный шоколад с жидким азотом и ягодным муссом',
-    price: '1 890 ₽',
+    price: '1 490 ₽',
     background: 'from-indigo-900/40 to-purple-900/40',
-    category: 'Десерты'
+    category: 'Десерты',
+    image: 'https://cdn.poehali.dev/projects/d6a9f8ab-2a91-4353-b7b9-70c93bca06b5/files/7ddbbec1-61bc-43d3-8aef-a8eee7167b82.jpg'
   }
 ];
 
@@ -157,6 +179,12 @@ const Index = () => {
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-primary/0 via-primary/10 to-primary/0 animate-shimmer" 
                      style={{ backgroundSize: '200% 100%' }} />
+                
+                <img 
+                  src={item.image} 
+                  alt={item.name}
+                  className="w-full h-48 object-cover"
+                />
                 
                 <div className="relative p-6 h-full flex flex-col">
                   <div className="flex justify-between items-start mb-3">
